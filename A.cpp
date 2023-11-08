@@ -14,12 +14,13 @@
 		cout << "Created "<<i << "." << endl;
 
 	}
-	/*A::A(const A& obj) {
+	A::A(const A& obj) {
 
+		privName = obj.privName;
 		cout << "Created a copy" << endl;
-	}*/
+	}
 	A::~A() {
-		cout << "Destroyed "<<name<<privName << "." << endl;
+		cout << "Destroyed "<<privName << "." << endl;
 	
 	}
 

@@ -1,7 +1,8 @@
-
-#include <iostream>
+#pragma
 #ifndef A_H
 #define A_H
+
+#include <iostream>
 using namespace std;
 
 
@@ -19,7 +20,11 @@ public:
 	/// </summary>
 	/// <param name="i"></param>
 	A(string i);
-	//A(const A& obj);
+	/// <summary>
+	/// Copy Constructor for deep copy
+	/// </summary>
+	/// <param name="obj"></param>
+	A(const A& obj);
 	/// <summary>
 	/// Destructor
 	/// </summary>
