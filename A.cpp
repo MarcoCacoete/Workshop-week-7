@@ -19,7 +19,7 @@
 		cout << "Created a copy" << endl;
 	}*/
 	A::~A() {
-		cout << "Destroyed "<<name<<privName << "." << endl;
+		cout << "Destroyed "<<privName << "." << endl;
 	
 	}
 
