@@ -4,29 +4,33 @@
 
 
 
-class A {
-public:
-	A() {
-		privName = name;
+	
+	A::A() {
+		string name = "default";
+		cout<<"Created "<<name << "." <<endl;
+	}
+	A::A(string i) {
+		privName = i;
+		cout << "Created "<<i << "." << endl;
 
 	}
-	A(string i) {
-		privName = i;
+	/*A::A(const A& obj) {
 
+		cout << "Created a copy" << endl;
+	}*/
+	A::~A() {
+		cout << "Destroyed "<<name<<privName << "." << endl;
+	
 	}
-	/// <summary>
-	/// Mutator method for class A
-	/// </summary>
-	void setName(string i) {
+
+	void A::setName(string i) {
 		privName = i;
+		cout << "Changed name to " << privName << "." << endl;
 	}
-	/// <summary>
-	/// Accessor method for class A
-	/// </summary>
-	void printName() {
+
+	void A::printName() {
 		cout << "Name is " << privName << "." <<endl;
 	}
-	string name = "default";
-private:
-	string privName;
-};
+
+
+	

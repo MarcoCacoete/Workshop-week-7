@@ -1,5 +1,7 @@
-#pragma once
-#include <string>
+
+#include <iostream>
+#ifndef A_H
+#define A_H
 using namespace std;
 
 
@@ -7,19 +9,35 @@ class A
 {
 
 public:
-
+	string name;
+	/// <summary>
+	/// Default constructor
+	/// </summary>
 	A();
-
+	/// <summary>
+	/// Overloaded constructor
+	/// </summary>
+	/// <param name="i"></param>
 	A(string i);
-
+	//A(const A& obj);
+	/// <summary>
+	/// Destructor
+	/// </summary>
+	~A();
+	/// <summary>
+	/// Mutator
+	/// </summary>
+	/// <param name="i"></param>
 	void setName(string i);
-
+	/// <summary>
+	/// Method to output name
+	/// </summary>
 	void printName();
 
-	string name;
+	
 private:
 
 	string privName;
 
 };
-
+#endif 
